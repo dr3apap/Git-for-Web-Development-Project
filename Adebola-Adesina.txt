@@ -1,0 +1,119 @@
+https://codepen.io/dr3apap/pen/KKwwZeX?editors=1100
+   1. What is Semantic HTML? 
+Semantic HTML or semantic markup is HTML that introduces meaning to the web page rather than just presentation.
+    2. What is HTML used for? 
+It's use as a structure or blueprint for website. It's called Hyper Text Markup Language.
+    3. What is an attribute and where do we put it? 
+attribute are element that gives more info or meaning to data. They reside inside tags i.e ancor, href and img.They're special words used inside the opening tag to control the element's behaviour. HTML attributes are a modifier of an HTML element type. An attribute either modifies the default functionality of an element type or provides functionality to certain element types unable to function correctly without them
+    4. What is the h1 tag used for? How many times should I use it on a page?
+h1 is used as the main or number 1 heading on a page. It's like the front page of a news-paper and it should be use once.
+    5. Name two tags that have required attributes
+(1)img = src and ancor = link
+    6. What do we put in the head of our HTML document? 
+eThe <head> element can contain other HTML tags that contain metadata. Metadata provides information about the document such as title, description, keywords etc
+    7. What is an id? 
+It's a css or styling seletcor that is unique.
+    8. What elements can I add an id to? 
+Any elemnt, id is individual styling that is assign to one element unique element.
+    9. How many times can I use the same id on a page? 
+It can be use Only once on an individual element this is important because of javsscript although css may allow us to use it more than once and even more than one element but it should be use once and I tend to sticl to that.
+    10. What is a class? 
+A class is a css selector that can be used to identify more than one element .
+    11. What elements can I add a class to? 
+Any elment.
+    12. How many times can I use the same class on a page? 
+As mamy times.
+    13. How do I get my link to open in a new tab?
+Adding rel="noopener noreferrer"  but it should be a choice thing.
+    14. What is the alt attribute used for? 
+The required alt attribute specifies an alternate text for an image, if the image cannot be displayed. The alt attribute provides alternative information for an image if a user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader)
+    15. How do I reference an id?
+You can assign a unique identifier to an HTML element, then style that element by referencing its unique identifier. This allows you to define a style that can only be used by the element you assign the ID to.
+    16. What is the difference between a section and a div
+The <section> tag defines sections in a document, such as chapters, headers, footers, or any other sections of the document. whereas: The <div> tag defines a division or a section in an HTML document. The <div> tag is used to group block-elements to format them with CSS
+    17. What is CSS used for? 
+For styling HTML 
+    18. How to we select an element? Example - every h2 on the page
+Focusing on the <select> element (e.g. using Tab ) and holding down the ctrl keythen using the Up and Down cursor keys to change the "focused" select option, i.e. the one that will be selected if you choose to do so.
+
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+Use a class when you want to consistently style multiple elements throughout the page/site. Classes are useful when you have, or possibly will have in the future, more than one element that shares the same style. ...
+Use the ID when you have a single element on the page that will take the style.
+    20. How do we select classes in CSS?
+DOT or . notation 
+    21. How do we select a p element with a single class of “human””?
+Combination
+    22. What is a parent child selector? When would this be useful? 
+The element > element selector is used to select elements with a specific parent.  Elements that are not directly a child of the specified parent, are not selected.
+    23. How do you select all links within a div with the class of sidebar?
+Descendant selectors is one of the few selector types that actually works across browsers, so you can rely on them.
+    24. What is a pseudo selector?
+A CSS pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s). For example, :hover can be used to change a button's color when the user's pointer hovers over it
+    25. What do we use the change the spacing between lines?
+Relatives size, pixel size and %
+    26. What do we use to change the spacing between letters?
+pixe value or em.
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+toUppercase, tolowercase and titlecase
+    28. How do I add a 1px border around my div that is dotted and black?
+border: 1px dotted blacl;
+    29. How do I select everything on the page? 
+*
+    30. How do I write a comment in CSS?
+/*   */
+    31. How do I find out what file I am in, when I am using the command line? pwd for directory ls for files
+32. Using the command line - how do I see a list of files/folders in my current folder? ls 
+    33. How do I remove a file via the command line? Why do I have to be careful with this? rmdir or rm + filename  we need to be careful because it will remove it permanently
+    34. Why should we use verson control
+If you're working on a team, version control is very powerful because it helps you all work in harmony, instead of overwriting each other's changes. It helps minimize disruption to your teammates working on the same project, or even the same file.
+    35. How often should I commit to github? wheneever there is a change
+    36. What is the command we would use to push our repo up to github? git push origin
+    37. Walk me through Lambda's git flow. 
+    Create YOUR OWN version of Repo —> (Fork)
+
+Add your TL as a collaborator
+
+on GitHub:
+Settings -> Collaborators -> Add Collaborator (use your TL’s handle)
+(I’d suggest grabbing the invite tag and DM it to your TL on Slack at this point)
+
+Clone YOUR Repo
+
+back on your machine:
+git clone <your-repo-address>
+
+Create a branch (the one you are going to be working on)
+
+cd <repo directory>
+git checkout -b 'firstname-lastname'
+
+Push your new branch up to GitHub and make all future pushes to that branch
+
+git push -u origin firstname-lastname
+
+on GitHub:
+Compare & Pull Request -> Base: YOUR MASTER (Not the Lambda Master)
+compare fork: YOUR FORK
+
+Add your TL as a reviewer on the Pull Request
+
+On the ‘Open a Pull Request‘ page click on Reviewers. If your TL has accepted your invite, then you should be able to select them here. If not, then they haven’t accepted the invite, and come back later…
+
+Your TL will merge the work into YOUR Master fork when they have reviewed and approved it.- [ ] Create your own version of this repo - Fork - [ ] Add your TL as a collaborator - [ ] Clone this repo - [ ] Create a branch git checkout -b 'firstName-lastName' - [ ] Add your name to the list of names below. - [ ] Run your usual git commands or adding/committing and pushing Be sure to push to your branch - [ ] Create a Pull-Request to submit your work - [ ] Use your own student fork as the base (compare across forks, base-fork -> master). - [ ] Add your TL as a reviewer on the Pull-Request - [ ] TL then will count the Assignment as done by merging the HW back into master “STUDENT FORK”.
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+    You can't put block elements inside inline elements. Formatting. By default, inline elements do not force a new line to begin in the document flow. Block elements, on the other hand, typically cause a line break to occur (although, as usual, this can be changed using CSS)
+    
+    2. What happens when an element is positioned absolutely? 
+    An element with position: absolute is removed from the normal document flow. It is positioned automatically to the starting point (top-left corner) of its parent element. If it doesn't have any parent elements, then the initial document <html> will be its parent
+    
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+    By using inline:display.
+    4. Name 3 elements that are diplay block by default, Div, Section and Ul
+     2 elements that are display inline by default and 1 element that is display inline-block by default Span and script are display inline by default. P tag display inline-block by deault.
+    5. In your own words, explain the box model. What is the fix for the box model? The fix for box model is box-sizing:border-box. Box Model is the 
+
+
+
